@@ -148,7 +148,7 @@ hr {
         </div>
         
       <div class"footer">
-          <a href="https://accountify.com">
+          <a href="https://accountify.netlify.app">
           <img class="footer-logo" src="https://i.postimg.cc/BbJSWpTJ/logo.png" alt="arc-invoice"/>
         </a>
       </div>

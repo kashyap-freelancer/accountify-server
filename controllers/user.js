@@ -115,13 +115,13 @@ export const forgotPassword = (req,res)=>{
             user.save().then((result)=>{
                 transporter.sendMail({
                     to:user.email,
-                    from:"Accountify <hello@accountify.com>",
+                    from:"Accountify <hello@accountify.netlify.app>",
                     subject:"Password reset request",
                     html:`
                     <p>You requested for password reset from Arc Invoicing application</p>
-                    <h5>Please click this <a href="https://accountify.com/reset/${token}">link</a> to reset your password</h5>
+                    <h5>Please click this <a href="https://accountify.netlify.app/reset/${token}">link</a> to reset your password</h5>
                     <p>Link not clickable?, copy and paste the following url in your address bar.</p>
-                    <p>https://accountify.com/reset/${token}</p>
+                    <p>https://accountify.netlify.app/reset/${token}</p>
                     <P>If this was a mistake, just ignore this email and nothing will happen.</P>
                     `
                 })
